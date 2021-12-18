@@ -24,7 +24,7 @@ class CreateDemonstrativesTable extends Migration
             $table->integer('taxa_desconto')->nullable();
             $table->string('pagamento_statu')->nullable();
             $table->date('pagamento_date')->nullable();
-            $table->string('pagamento_previsao')->nullable();
+            $table->date('pagamento_previsao')->nullable();
             $table->decimal('valor_bruto', 10,2);
             $table->decimal('saldo', 10,2);
             $table->text('descricao')->nullable();
