@@ -35,9 +35,9 @@
 <aside class="main-sidebar elevation-4 sidebar-light-secondary">
     <!-- Brand Logo -->
     <a href="{{ route('demonstrative.index') }}" class="brand-link">
-        <img src="{{ asset('logos/favicon.svg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+        <img src="{{ asset('logos/favicon.svg') }}" alt="AdminLTE Logo" class="brand-image img-circle"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">+SS</span>
+        <span class="brand-text font-weight-light">Saúde e Consultoria</span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -51,10 +51,31 @@
                         class="nav-link {{ $activePage == 'demonstrative.index' ? ' active' : '' }}">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>
-                            Demonstrativo
+                            Demonstrativos
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('doctor.index') }}"
+                        class="nav-link {{ $activePage == 'doctor.index' ? ' active' : '' }}">
+                        <i class="nav-icon fas fa-user-md"></i>
+                        <p>
+                            Médicos
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                </li>
+                {{-- <li class="nav-item">
+                    <a href="#"
+                        class="nav-link {{ $activePage == 'address.index' ? ' active' : '' }}">
+                        <i class="nav-icon fas fa-address-card"></i>
+                        <p>
+                            Endereços
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                </li> --}}
                 <li class="nav-item">
                     <a href="{{ route('demonstrative.report') }}"
                         class="nav-link {{ $activePage == 'demonstrative.report' ? ' active' : '' }}">

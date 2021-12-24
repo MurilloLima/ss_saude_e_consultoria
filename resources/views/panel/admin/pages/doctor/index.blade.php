@@ -1,5 +1,5 @@
-@extends('panel.admin.layouts.app' ,['activePage' => 'demonstrative.index'])
-@section('title', 'Demonstrativo')
+@extends('panel.admin.layouts.app' ,['activePage' => 'doctor.index'])
+@section('title', 'Médicos')
 @section('content')
 <div class="content-wrapper">
     <div class="content">
@@ -10,7 +10,7 @@
 
             <div class="row" style="margin-bottom: 15px;">
                 <div class="col-md-5">
-                    <form action="{{ route('demonstrative.search') }}" method="get">
+                    <form action="{{ route('doctor.search') }}" method="get">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Pesquisar" name="value">
                             <span class="input-group-append">
@@ -20,7 +20,7 @@
                     </form>
                 </div>
                 <div class="col-md-7">
-                    <a href="{{ route('demonstrative.create') }}" class="btn btn-default">Cadastrar</a>
+                    <a href="{{ route('doctor.create') }}" class="btn btn-default">Cadastrar</a>
                 </div>
             </div>
             <div class="row">
@@ -33,26 +33,26 @@
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>DATA EMISSAO</th>
-                                        <th>CNPJ</th>
-                                        <th>EMPRESA</th>
-                                        <th>TOMADOR DO SERVIÇO</th>
-                                        <th>VALOR BRUTO DA NOTA FISCAL</th>
+                                        <th>MÉDICO</th>
+                                        <th>CPF</th>
+                                        <th>CRM</th>
+                                        <th>NATURALIDADE</th>
+                                        <th>DATA CADASTRO</th>
                                         <th>#</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @forelse ($data as $item)
                                     <tr>
-                                        <td>{{date('d/m/Y', strtotime($item->date_emissao))}}</td>
-                                        <td>{{$item->cnpj}}</td>
-                                        <td>{{$item->empresa}}</td>
-                                        <td>{{$item->tomador}}</td>
-                                        <td>{{number_format($item->valor_bruto, 2, ',', '.')}}</td>
+                                        <td>{{$item->user->name}}</td>
+                                        <td>{{$item->cpf}}</td>
+                                        <td>{{$item->crm}}</td>
+                                        <td>{{$item->naturalidade}}</td>
+                                        <td>{{date('d/m/Y', strtotime($item->created_at))}}</td>
                                         <td>
-                                            <a href="{{ route('demonstrative.edit', ['id'=>$item->id]) }}"
+                                            <a href="{{ route('doctor.edit', ['id'=>$item->id]) }}"
                                                 title="Editar"><i class="fa fa-edit"></i></a>
-                                            <a href="{{ route('demonstrative.delete', ['id'=>$item->id]) }}"
+                                            <a href="{{ route('doctor.delete', ['id'=>$item->id]) }}"
                                                 title="Deletar"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>

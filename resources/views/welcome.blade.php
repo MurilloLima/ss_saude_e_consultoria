@@ -72,12 +72,13 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                +SS Saúde e Consultoria
+                +SS <br>
+                <span style="font-size: 16px">Saúde e Consultoria</span>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <a href="{{ route('login') }}" class="btn btn-lg btn-block btn-default  ">Entrar</a>
+                <div class="col-md-12">
+                    <a href="{{ route('login') }}" class="btn btn-default ">Entrar no sistema</a>
                 </div>
             </div>
         </div>

@@ -30,7 +30,9 @@
         <div class="card">
             <div style="border-radius: 50em !important" class="card-body login-card-body mb-4 mt-3">
                 <div class="login-logo">
-                    +SS Saúde e Consultoria
+                    Entrar no Sistema <br>
+                    <span style="font-size: 14px">Entre com seu usuário e senha
+                    </span>
                 </div>
 
                 <form action="{{ route('login') }}" method="post">
