@@ -21,5 +21,19 @@ class Demonstrative extends Model
         'saldo',
         'descricao',
         'date_emissao',
+
+        'nome',
+        'prestador_cpf',
+        'prestador_crm',
+        'prestador_rg',
+        'estado_civl',
+        'endereco',
+        'telefone',
+        'email',
+        'nacionalidade',
+        'naturalidade',
+        'banco',
+        'agencia',
+        'conta',
     ];
 }

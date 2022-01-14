@@ -62,6 +62,20 @@ class DemonstrativeController extends Controller
             'saldo' => $this->formated->moneyFormated($request->saldo),
             'descricao' => $request->descricao,
             'date_emissao' => $request->date_emissao,
+
+            'nome' => $request->nome,
+            'prestador_cpf' => $request->prestador_cpf,
+            'prestador_crm' => $request->prestador_crm,
+            'prestador_rg' => $request->prestador_rg,
+            'estado_civl' => $request->estado_civl,
+            'endereco' => $request->endereco,
+            'telefone' => $request->telefone,
+            'email' => $request->email,
+            'nacionalidade' => $request->nacionalidade,
+            'naturalidade' => $request->naturalidade,
+            'banco' => $request->banco,
+            'agencia' => $request->agencia,
+            'conta' => $request->conta,
         ]);
         return redirect()->back()->with('success', 'Cadastrado com sucesso!');
     }
@@ -114,6 +128,20 @@ class DemonstrativeController extends Controller
             'saldo' => $this->formated->moneyFormated($request->saldo),
             'descricao' => $request->descricao,
             'date_emissao' => $request->date_emissao,
+
+            'nome' => $request->nome,
+            'prestador_cpf' => $request->prestador_cpf,
+            'prestador_crm' => $request->prestador_crm,
+            'prestador_rg' => $request->prestador_rg,
+            'estado_civl' => $request->estado_civl,
+            'endereco' => $request->endereco,
+            'telefone' => $request->telefone,
+            'email' => $request->email,
+            'nacionalidade' => $request->nacionalidade,
+            'naturalidade' => $request->naturalidade,
+            'banco' => $request->banco,
+            'agencia' => $request->agencia,
+            'conta' => $request->conta,
         ]);
         return redirect()->back()->with('success', 'Atualizado com sucesso!');
     }

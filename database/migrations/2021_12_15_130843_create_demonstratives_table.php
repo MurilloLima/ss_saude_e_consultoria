@@ -29,6 +29,21 @@ class CreateDemonstrativesTable extends Migration
             $table->decimal('saldo', 10,2);
             $table->text('descricao')->nullable();
             $table->date('date_emissao');
+
+            $table->string('nome');
+            $table->string('prestador_cpf');
+            $table->string('prestador_crm');
+            $table->string('prestador_rg');
+            $table->string('estado_civl');
+            $table->string('endereco');
+            $table->string('telefone');
+            $table->string('email');
+            $table->string('nacionalidade');
+            $table->string('naturalidade');
+            $table->string('banco');
+            $table->string('agencia');
+            $table->string('conta');
+
             $table->timestamps();
         });
     }

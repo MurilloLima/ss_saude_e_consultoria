@@ -31,6 +31,20 @@ class DemonstrativeRequest extends FormRequest
             'valor_bruto' => 'required',
             'saldo' => 'required',
             'date_emissao' => 'required',
+
+            'nome' => 'required',
+            'prestador_cpf' => 'required',
+            'prestador_crm' => 'required',
+            'prestador_rg' => 'required',
+            'estado_civl' => 'required',
+            'endereco' => 'required',
+            'telefone' => 'required',
+            'email' => 'required',
+            'nacionalidade' => 'required',
+            'naturalidade' => 'required',
+            'banco' => 'required',
+            'agencia' => 'required',
+            'conta' => 'required',
         ];
     }
 
