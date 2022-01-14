@@ -2,9 +2,8 @@
     <div class="col-md-4">
         <div class="form-group">
             <label for="">E-mail</label>
-            <input type="email" class="form-control" name="email" @if ($data->user->role != 'admin')
-            disabled
-            @endif value="{{$data->user->email ?? old('email')}}" placeholder="">
+            <input type="email" class="form-control" name="email" value="{{$data->user->email ?? old('email')}}"
+                placeholder="">
         </div>
     </div>
     <div class="col-md-4">
@@ -80,7 +79,21 @@
     </div>
 </div>
 <div class="row">
-
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="">ENDERECO</label>
+            <input type="text" class="form-control" name="endereco" value="{{$data->endereco ?? old('endereco')}}">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="">TELEFONE</label>
+            <input type="text" class="form-control phone_with_ddd" name="telefone"
+                value="{{$data->telefone ?? old('telefone')}}">
+        </div>
+    </div>
+</div>
+<div class="row">
     <div class="col-md-3">
         <div class="form-group">
             <label for="">BANCO</label>
@@ -97,6 +110,53 @@
         <div class="form-group">
             <label for="">CONTA</label>
             <input type="text" class="form-control" name="conta" value="{{$data->conta ?? old('conta')}}">
+        </div>
+    </div>
+</div>
+<h5>LOCAL PRESTAÇÃO DE SERVIÇO</h5>
+<div class="row">
+    <div class="col-md-5">
+        <div class="form-group">
+            <label for="">NOME HOSPITAL</label>
+            <input type="text" class="form-control" name="local_servico"
+                value="{{$data->local_servico ?? old('local_servico')}}">
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="form-group">
+            <label for="">SERVIÇO PRESTADO</label>
+            <input type="text" class="form-control" name="servico_prestado"
+                value="{{$data->servico_prestado ?? old('servico_prestado')}}">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="">CNPJ</label>
+            <input type="text" class="form-control" name="servico_cnpj"
+                value="{{$data->servico_cnpj ?? old('servico_cnpj')}}">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="">ENDEREÇO</label>
+            <input type="text" class="form-control" name="servico_endereco"
+                value="{{$data->servico_endereco ?? old('servico_endereco')}}">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="">TELEFONE</label>
+            <input type="text" class="form-control" name="servico_telefone"
+                value="{{$data->servico_telefone ?? old('servico_telefone')}}">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="">E-MAIL</label>
+            <input type="text" class="form-control" name="servico_email"
+                value="{{$data->servico_email ?? old('servico_email')}}">
         </div>
     </div>
 </div>

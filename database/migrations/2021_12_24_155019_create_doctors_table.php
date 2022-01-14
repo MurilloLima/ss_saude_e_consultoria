@@ -30,6 +30,14 @@ class CreateDoctorsTable extends Migration
             $table->string('banco');
             $table->string('agencia');
             $table->string('conta');
+            $table->string('endereco');
+            $table->string('telefone');
+            $table->string('local_servico');
+            $table->string('servico_prestado');
+            $table->string('servico_cnpj');
+            $table->string('servico_endereco');
+            $table->string('servico_telefone');
+            $table->string('servico_email')->nullable();
             $table->timestamps();
         });
     }

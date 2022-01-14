@@ -37,7 +37,7 @@
     <a href="{{ route('demonstrative.index') }}" class="brand-link">
         <img src="{{ asset('logos/favicon.svg') }}" alt="AdminLTE Logo" class="brand-image img-circle"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">Saúde e Consultoria</span>
+        <span class="brand-text font-weight-light">SAÚDE E CONSULTORIA</span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar">

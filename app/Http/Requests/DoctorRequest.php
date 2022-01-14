@@ -36,6 +36,13 @@ class DoctorRequest extends FormRequest
             'banco' => 'required',
             'agencia' => 'required',
             'conta' => 'required',
+            'endereco' => 'required',
+            'telefone' => 'required',
+            'local_servico' => 'required',
+            'servico_prestado' => 'required',
+            'servico_cnpj' => 'required',
+            'servico_endereco' => 'required',
+            'servico_telefone' => 'required',
         ];
     }
 

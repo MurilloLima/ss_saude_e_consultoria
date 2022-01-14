@@ -61,6 +61,14 @@ class DoctorController extends Controller
             'banco' => $request->banco,
             'agencia' => $request->agencia,
             'conta' => $request->conta,
+            'endereco' => $request->endereco,
+            'telefone' => $request->telefone,
+            'local_servico' => $request->local_servico,
+            'servico_prestado' => $request->servico_prestado,
+            'servico_cnpj' => $request->servico_cnpj,
+            'servico_endereco' => $request->servico_endereco,
+            'servico_telefone' => $request->servico_telefone,
+            'servico_email' => $request->servico_email,
         ]);
         return redirect()->back()->with('success', 'Cadastrado com sucesso!');
     }
@@ -113,6 +121,14 @@ class DoctorController extends Controller
             'banco' => $request->banco,
             'agencia' => $request->agencia,
             'conta' => $request->conta,
+            'endereco' => $request->endereco,
+            'telefone' => $request->telefone,
+            'local_servico' => $request->local_servico,
+            'servico_prestado' => $request->servico_prestado,
+            'servico_cnpj' => $request->servico_cnpj,
+            'servico_endereco' => $request->servico_endereco,
+            'servico_telefone' => $request->servico_telefone,
+            'servico_email' => $request->servico_email,
         ]);
         return redirect()->back()->with('success', 'Editado com sucesso!');
     }
